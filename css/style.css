@@ -322,3 +322,23 @@ footer {
 
 /* 当院について */
 /* サブhero 当院について */
+
+
+
+
+
+
+
+
+
+
+/* デイケア */
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-right: 50px solid transparent;
+  border-left: 50px solid transparent;
+  border-top: 60px solid #555555;
+  border-bottom: 0;
+}
