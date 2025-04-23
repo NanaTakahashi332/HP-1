@@ -127,7 +127,7 @@ nav a {
   background-color:#224466;
   border:2px solid #224466;
   margin-top:8rem;
-  padding:0.25rem;
+  padding:0.25rem 0.75rem;
 }
 
 #news dl{
@@ -159,18 +159,20 @@ justify-content: space-between;
 
 #medicalsubject a{
   display: block;
-  max-width: 8rem;
-  max-height: 8rem;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
   background: #F1F3CE;
   text-align: center;
   line-height: 8rem;
+  overflow: hidden;
 }
 
 #medicalsubject img{
   max-width: 6rem;
   max-height: 6rem;
   object-fit: cover;
+  vertical-align: middle;
 }
 
 #medicalsubject li{
@@ -320,8 +322,55 @@ footer {
 }
 
 
+/* 個別ページ共通の設定 */
+/* 個別ページ見出し */
+#hero-sub{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 7.5rem;
+}
+
+#hero-sub img {
+  width: 50%;
+  max-height:36rem;
+}
+
+.hero-sub-container{
+  background-color:rgba(153, 170, 187, 1);
+}
+
+.hero-sub-heading{
+padding:5rem 0 2rem 0;
+}
+
+.hero-sub-heading, .hero-sub-container p{
+  max-width: 80%;
+  margin:0 auto;
+}
+
+/* 個別ページ */
 /* 当院について */
-/* サブhero 当院について */
+.policy-message{
+  text-align: center;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.policy-message-test {
+  text-align: left;
+  padding:1rem 0;
+}
+
+#policy ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+#policy img{
+  max-width: 95%;
+  margin-top: 15%;
+}
 
 
 
