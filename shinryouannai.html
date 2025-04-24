@@ -6,7 +6,7 @@
     <title>診療案内</title>
     <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="" />
+    <link rel="icon" href="./img/icon.png" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
 </head>
@@ -16,27 +16,29 @@
         <div class="container">
             <div class="container-header">
                 <img src="./img/icon.png" />
-                <p>ABC整形外科クリニック</p>
+                <a href="./index.html">ABC整形外科クリニック</a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">当院について</a></li>
-                    <li><a href="#">診療案内</a></li>
-                    <li><a href="#">施設案内</a></li>
-                    <li><a href="#">デイケア</a></li>
-                    <li><a href="#">リハビリ</a></li>
+                    <li><a href="./touinnitsuite.html">当院について</a></li>
+                    <li><a href="./shinryouannai.html">診療案内</a></li>
+                    <li><a href="./shisetsuannai.html">施設案内</a></li>
+                    <li><a href="./daycare.html">デイケア</a></li>
+                    <li><a href="./rihabiri.html">リハビリ</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section id="hero-sub-shinryouannai">
+        <section id="hero-sub">
             <img src="./img/shinryonoannnai.jpg">
-            <h2 class="hero-sub-heading">診療のご案内</h2>
-            <p>患者さまの目線で向き合い、痛みを知ること。</p>
-            <p>負担のない治療の可能性を、追いかけること。</p>
+            <div class="hero-sub-container">
+                <h2 class="hero-sub-heading">診療のご案内</h2>
+                <p>患者さまの目線で向き合い、痛みを知ること。</p>
+                <p>負担のない治療の可能性を、追いかけること。</p>
+            </div>
         </section>
-        <section id="selection">
+        <section id="medicalsubject">
             <div class="container">
                 <h2 class="heading">お悩みの症状から選ぶ</h2>
                 <ul>
@@ -63,12 +65,14 @@
                 <h2 class="heading">診療科目のご案内</h2>
                 <p>患者さまへ治療を与えるだけの一方通行の治療ではなく、<br>些細な不安や心配までもしっかりと耳を傾け、笑顔を与えられる治療を行います。</p>
                 <div class="card-genneral">
-                    <a href="#"><img src="./img/shinryo-1.png"></a>
-                    <p>整形外科一般</p>
+                    <a href="#"><img src="./img/shinryo-1.png" class="subjectguide-img"></a>
+                    <h6 class="card-genneral-title">整形外科一般</h6>
                     <div class="card-explain">
-                        <img src="./img/shinryoukamoku-1.jpg">
-                        <p>整形外科一般では主に身体の運動に関わる手、足、脊椎など筋骨格系のけがや病気を診療しております。</p>
-                        <p>四肢・体幹、関節、靭帯、筋肉、脊髄、神経といった運動器全体の疾患を治療する診療科です。</p>
+                        <img src="./img/shinryoukamoku-1.jpg" class="shinryo-img">
+                        <div class="card-explain-text">
+                            <p>整形外科一般では主に身体の運動に関わる手、足、脊椎など筋骨格系のけがや病気を診療しております。</p>
+                            <p>四肢・体幹、関節、靭帯、筋肉、脊髄、神経といった運動器全体の疾患を治療する診療科です。</p>
+                        </div>
                     </div>
                     <dl class="card-subjectdetail">
                         <dt>■ 頸椎椎間板ヘルニア</dt>
@@ -135,13 +139,16 @@
                         <dd>+</dd>
                     </dl>
                 </div>
-                <div class="card-sports">
-                    <a href="#"><img src="./img/shinryo-2.png"></a>
-                    <p>スポーツ外来</p>
+                <div class="card-genneral">
+                    <a href="#"><img src="./img/shinryo-2.png" class="subjectguide-img"></a>
+                    <h6 class="card-genneral-title">スポーツ外来</h6>
                     <div class="card-explain">
-                        <img src="./img/shinryoukamoku-2.jpg">
-                        <p>当院では、スポーツを原因として生じる症状をスポーツ専門の外来として統一することで、スポーツに取り組む人々をサポートしております。</p>
-                        <p>外来で診療する内容はスポーツ中に生じた痛みの原因を、問診やレントゲンを撮ることで特定します。</p>
+                        <img src="./img/shinryoukamoku-2.jpg" class="shinryo-img">
+                        <div class="card-explain-text">
+                            <p>当院では、スポーツを原因として生じる症状をスポーツ専門の外来として統一することで、スポーツに取り組む人々をサポートしております。
+                            </p>
+                            <p>外来で診療する内容はスポーツ中に生じた痛みの原因を、問診やレントゲンを撮ることで特定します。</p>
+                        </div>
                     </div>
                     <dl class="card-subjectdetail">
                         <dt>■ 野球肩</dt>
@@ -170,39 +177,48 @@
                         <dd>+</dd>
                     </dl>
                 </div>
-                <div class="card-osteoporosis">
-                    <a href="#"><img src="./img/shinryo-3.png"></a>
-                    <p>骨粗鬆症外来</p>
+                <div class="card-genneral ">
+                    <a href="#"><img src="./img/shinryo-3.png" class="subjectguide-img"></a>
+                    <h6 class="card-genneral-title">骨粗鬆症外来</h6>
                     <div class="card-explain">
-                        <img src="./img/shinryoukamoku-3.jpg">
-                        <p>骨粗鬆症は、骨の強度が下がり骨折しやすくなる疾患です。</p>
-                        <p>予防のためには骨密度の測定を定期的に行うこと、そして何よりも早期治療が重要です。寝たきりになってしまう前に、日常生活の質をできるだけ長く維持していきましょう。</p>
+                        <img src="./img/shinryoukamoku-3.jpg" class="shinryo-img">
+                        <div class="card-explain-text">
+                            <p>骨粗鬆症は、骨の強度が下がり骨折しやすくなる疾患です。</p>
+                            <p>予防のためには骨密度の測定を定期的に行うこと、そして何よりも早期治療が重要です。寝たきりになってしまう前に、日常生活の質をできるだけ長く維持していきましょう。</p>
+                        </div>
                     </div>
                     <dl class="card-subjectdetail">
                         <dt>■ 脊椎圧迫骨折</dt>
                         <dd>+</dd>
                     </dl>
                 </div>
-                <div class="card-rheumatism">
-                    <a href="#"><img src="./img/shinryo-4.png"></a>
-                    <p>関節リウマチ</p>
+                <div class="card-genneral ">
+                    <a href="#"><img src="./img/shinryo-4.png" class="subjectguide-img"></a>
+                    <h6 class="card-genneral-title">関節リウマチ</h6>
                     <div class="card-explain">
-                        <img src="./img/shinryoukamoku-4.jpg">
-                        <p>関節リウマチは、関節内に存在する滑膜という組織が異常増殖することによって関節内に慢性の炎症を生じる疾患で、進行すると関節が破壊され様々な程度の機能障害を引き起こします。</p>
-                        <p>関節症状に加えて貧血や微熱、全身倦怠感などの全身症状を合併することもあります。</p>
+                        <img src="./img/shinryoukamoku-4.jpg" class="shinryo-img">
+                        <div class="card-explain-text">
+                            <p>
+                                関節リウマチは、関節内に存在する滑膜という組織が異常増殖することによって関節内に慢性の炎症を生じる疾患で、進行すると関節が破壊され様々な程度の機能障害を引き起こします。</p>
+                            <p>関節症状に加えて貧血や微熱、全身倦怠感などの全身症状を合併することもあります。</p>
+                        </div>
                     </div>
                     <dl class="card-subjectdetail">
                         <dt>■ 関節リウマチ</dt>
                         <dd>+</dd>
                     </dl>
                 </div>
-                <div class="card-preventive">
-                    <a href="#"><img src="./img/shinryo-5.png"></a>
-                    <p>予防医学</p>
+                <div class="card-genneral ">
+                    <a href="#"><img src="./img/shinryo-5.png" class="subjectguide-img"></a>
+                    <h6 class="card-genneral-title">予防医学</h6>
                     <div class="card-explain">
-                        <img src="./img/shinryoukamoku-5.jpg">
-                        <p>“人生100年時代”という言葉があり、「健康寿命」を延ばすことへの関心が年々高まっています。</p>
-                        <p>当院では、医師を中心に、理学療法士、スポーツトレーナーが患者様ひとりひとりに適したプランを考え、運動プログラムを実施しています。</p>
+                        <img src="./img/shinryoukamoku-5.jpg" class="shinryo-img">
+                        <div class="card-explain-text">
+                            <p>“人生100年時代”という言葉があり、「健康寿命」を延ばすことへの関心が年々高まっています。</p>
+                            <p>
+                                当院では、医師を中心に、理学療法士、スポーツトレーナーが患者様ひとりひとりに適したプランを考え、運動プログラムを実施しています。
+                            </p>
+                        </div>
                     </div>
                     <dl class="card-subjectdetail">
                         <dt>■ マシントレーニング</dt>

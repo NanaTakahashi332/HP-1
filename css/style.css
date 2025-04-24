@@ -14,25 +14,25 @@ body {
   text-align: center;
 }
 
-.featured{
-  margin:5rem 0;
+.featured {
+  margin: 5rem 0;
 }
 
-a{
+a {
   text-decoration: none;
   color: #224466;
 }
 
 
-img{
-object-fit: cover;
+img {
+  object-fit: cover;
 }
 
-h2{
+h2 {
   font-size: 24px;
 }
 
-.heading{
+.heading {
   display: inline-block;
   border-bottom: 2px solid #F62A00;
   margin: 2rem auto;
@@ -50,14 +50,14 @@ header {
   width: 100%;
 }
 
-header .container,.container-header {
+header .container, .container-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header .container{
-  padding:1rem 0;
+header .container {
+  padding: 1rem 0;
   margin: 0 auto;
 }
 
@@ -87,11 +87,11 @@ nav a {
   background-image: url(../img/fv.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding:16rem 10rem 10rem;
+  padding: 16rem 10rem 10rem;
 }
 
 #hero h1 {
-  margin:0;
+  margin: 0;
   font-size: 40px;
 }
 
@@ -103,61 +103,61 @@ nav a {
   background: #fff;
   text-align: center;
   line-height: 40px;
-  margin:1rem 1rem 0;
+  margin: 1rem 1rem 0;
 }
 
 /* お知らせ */
 #news {
-  margin:6rem auto;
+  margin: 6rem auto;
 }
 
-#news .container{
+#news .container {
   display: flex;
   justify-content: space-between;
-  padding:2rem;
+  padding: 2rem;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: white;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-#news a{
+#news a {
   display: inline-block;
-  color:#fff;
-  background-color:#224466;
-  border:2px solid #224466;
-  margin-top:8rem;
-  padding:0.25rem 0.75rem;
+  color: #fff;
+  background-color: #224466;
+  border: 2px solid #224466;
+  margin-top: 8rem;
+  padding: 0.25rem 0.75rem;
 }
 
-#news dl{
+#news dl {
   display: flex;
   flex-wrap: wrap;
   max-width: 80%;
 }
 
-#news dt{
+#news dt {
   width: 30%;
   padding-bottom: 10px;
   margin-bottom: 10px;
-  border-bottom:1px solid #224466;
+  border-bottom: 1px solid #224466;
 }
 
-#news dd{
+#news dd {
   width: 50%;
   padding-bottom: 10px;
   margin-bottom: 10px;
-  border-bottom:1px solid #224466;
+  border-bottom: 1px solid #224466;
 }
 
 
 /* 診療科目・外来 */
-#medicalsubject ul{
-display: flex;
-justify-content: space-between;
+#medicalsubject ul {
+  display: flex;
+  justify-content: space-between;
 }
 
-#medicalsubject a{
+#medicalsubject a, #subjectguide a {
   display: block;
   width: 8rem;
   height: 8rem;
@@ -168,43 +168,46 @@ justify-content: space-between;
   overflow: hidden;
 }
 
-#medicalsubject img{
+#medicalsubject img, .subjectguide-img {
   max-width: 6rem;
   max-height: 6rem;
   object-fit: cover;
   vertical-align: middle;
 }
 
-#medicalsubject li{
+#medicalsubject li {
   max-width: 20%;
   text-align: center;
 }
 
 
 /* 当院で可能な検査・治療 */
-#treatment .treatment-subcontainer{
+#treatment .treatment-subcontainer {
   display: flex;
   justify-content: space-between;
 }
-#treatment .treatment-subcontainer:first-of-type{
+
+#treatment .treatment-subcontainer:first-of-type {
   margin-top: 2rem;
 }
 
-#treatment img{
-  max-width: 400px;
-  max-height: 400px;
+#treatment img {
+  max-width: 500px;
+  max-height: 500px;
   object-fit: cover;
+  display: block;
+  margin:auto;
 }
 
-#treatment .treatment-subcontainer-text{
-  padding:1.5rem;
+#treatment .treatment-subcontainer-text {
+  padding: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: white;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-#treatment .treatment-subcontainer-text p{
+#treatment .treatment-subcontainer-text p {
   font-size: 16px;
   text-align: left;
   margin-top: 3.5%;
@@ -212,22 +215,22 @@ justify-content: space-between;
 
 
 /* 当クリニックの概念 */
-#concept .concept-subcontainer{
+#concept .concept-subcontainer {
   display: flex;
   justify-content: space-between;
 }
 
-#concept img{
+#concept img {
   border-radius: 20px;
 }
 
-#concept p{
-  margin-top:5rem;
+#concept p {
+  margin-top: 5rem;
 }
 
 
 /* 当院長のご挨拶 */
-#greet .greet-subcontainer{
+#greet .greet-subcontainer {
   display: flex;
   justify-content: space-between;
 }
@@ -236,77 +239,77 @@ justify-content: space-between;
   max-width: 60%;
 }
 
-#greet p{
+#greet p {
   text-align: left;
   margin-bottom: 1rem;
 }
 
-#greet h4{
+#greet h4 {
   font-size: 22px;
   text-align: right;
   margin-right: 1rem;
 }
 
 /* 案内 */
-#information{
+#information {
   color: #fff;
   background-color: #00293C;
-  padding:3rem 0;
+  padding: 3rem 0;
   margin-top: 5%;
 }
 
-#information h5{
+#information h5 {
   font-size: 24px;
 }
 
-#information .container, .information-subcontainer-midashibox{
+#information .container, .information-subcontainer-midashibox {
   display: flex;
   justify-content: space-between;
 }
 
-.information-subcontainer{
+.information-subcontainer {
   width: 75%;
 }
 
-#information p{
+#information p {
   display: inline-block;
   text-align: left;
 }
 
-.information-subcontainer-midashibox_text{
+.information-subcontainer-midashibox_text {
   text-align: left;
 }
 
-.information-item{
+.information-item {
   background-color: #1E656D;
   border-radius: 15px;
-  margin:0 1rem 1rem 0;
-  padding:0.2rem 0.5rem;
+  margin: 0 1rem 1rem 0;
+  padding: 0.2rem 0.5rem;
 }
 
-#information ul{
+#information ul {
   text-align: left;
 }
 
-#information li{
+#information li {
   margin: 0.75rem;
 }
 
-#information table{
+#information table {
   width: 100%;
-  border-collapse:separate;
+  border-collapse: separate;
   border-spacing: 0;
 }
 
-#information th, td{
-  padding:0.25rem 0;
+#information th, td {
+  padding: 0.25rem 0;
 }
 
-#information th{
+#information th {
   background-color: #1E656D;
 }
 
-#information td{
+#information td {
   color: #224466;
   background-color: #fff;
   border-bottom: 2px solid #a8b7c5;
@@ -318,13 +321,13 @@ footer {
   color: #fff;
   text-align: center;
   font-size: 0.8em;
-  padding:1rem 0;
+  padding: 1rem 0;
 }
 
 
 /* 個別ページ共通の設定 */
 /* 個別ページ見出し */
-#hero-sub{
+#hero-sub {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -333,25 +336,32 @@ footer {
 
 #hero-sub img {
   width: 50%;
-  max-height:36rem;
+  max-height: 36rem;
 }
 
-.hero-sub-container{
-  background-color:rgba(153, 170, 187, 1);
+.hero-sub-container {
+  width: 50%;
+  background-color: rgba(153, 170, 187, 1);
 }
 
-.hero-sub-heading{
-padding:5rem 0 2rem 0;
+.hero-sub-heading {
+  padding: 5rem 0 2rem 0;
+  font-size: 38px;
 }
 
-.hero-sub-heading, .hero-sub-container p{
+.hero-sub-heading, .hero-sub-container p {
   max-width: 80%;
-  margin:0 auto;
+  margin: 0 auto;
 }
+
+.hero-sub-container p{
+  font-size: 30px;
+}
+
 
 /* 個別ページ */
 /* 当院について */
-.policy-message{
+.policy-message {
   text-align: center;
   font-size: 24px;
   font-weight: bolder;
@@ -359,35 +369,297 @@ padding:5rem 0 2rem 0;
 
 .policy-message-test {
   text-align: left;
-  padding:1rem 0;
+  padding: 1rem 0;
 }
 
-#policy ul{
+#policy ul {
   display: flex;
   justify-content: space-between;
 }
 
-#policy img{
+#policy img {
   max-width: 95%;
   margin-top: 15%;
 }
 
+#access .map{
+width:100%;
+margin-top: 2rem;
+}
 
 
+/* 医院・施設概要 */
+#facility dl {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  gap: 18px;
+  text-align: left;
+  padding: 6rem 2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#facility dt {
+  border-right: #F62A00 3px solid;
+  font-weight: bolder;
+  padding-left: 4rem;
+}
+
+#facility dt:last-of-type {
+  height: 16%;
+}
+
+#facility dd {
+  padding-left: 18%;
+}
+
+#access table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1.5px solid #a8b7c5;
+}
+
+#access th, td {
+  padding: 0.25rem 0;
+  border: 1.5px solid #a8b7c5;
+}
+
+#access th {
+  width: 20%;
+  color: #fff;
+  background-color: #1E656D;
+  padding: 0.25rem;
+  margin: auto;
+}
+
+#access td {
+  color: #224466;
+  background-color: #fff;
+  text-align: left;
+  padding: 1rem;
+}
 
 
+/* 個別ページ */
+/* 診療のご案内 */
+#subjectguide a {
+  margin: auto;
+}
+
+.card-genneral, .card-explain {
+  text-align: center;
+}
+
+.card-genneral {
+  margin-top:2.5rem;
+  padding: 3.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.subjectguide-img {
+  max-width: 6rem;
+  max-height: 6rem;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.card-genneral-title{
+  font-size: 26px;
+  margin:2rem 0;
+}
+
+.card-explain{
+display: flex;
+justify-content: space-between;
+}
+
+.shinryo-img{
+  width:48%;
+}
+
+.card-explain-text {
+  width:48%;
+  text-align: left;
+  }
+
+  .card-explain-text p{
+    margin-bottom:1rem;
+  }
+
+#subjectguide .card-subjectdetail {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+#subjectguide .card-subjectdetail dt, #subjectguide .card-subjectdetail dd {
+  border-bottom: #ccc 1.5px solid;
+  padding-top: 1rem;
+}
+
+#subjectguide .card-subjectdetail dt {
+  width: 95%;
+}
+
+#subjectguide .card-subjectdetail dd {
+  width: 5%;
+}
 
 
+/* 個別ページ */
+/* 施設・設備のご案内 */
+/* 施設のご紹介 */
+.facilityguide-subcontainer{
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
 
+.facilityguide-subcontainer img{
+  width:46%;
+}
 
+.facilityguide-subcontainer_textbox{
+  width:46%;
+  margin:auto;
+  text-align: left;
+  line-height: 2;
+}
 
+.facilityguide-subcontainer_textbox h5{
+  margin-bottom:0.75rem;
+  font-size: 26px;
+}
+
+/* 施設のご案内 */
+#center-photos ul{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+#center-photos img{
+  width: 100%; 
+  height: 100%; 
+  display: block;
+}
+
+.center-photos-1{
+  grid-row: 1 / 4;
+  grid-column: 1 / 4;
+}
+
+.center-photos-8{
+  grid-row: 4 / 7;
+  grid-column: 2 / 5;
+}
+
+/* 個別ページ */
 /* デイケア */
+#daycarefeature li, #rihabiri-feature li{
+  margin-bottom:2rem;
+  text-align: left;
+}
+#daycarefeature li p, #rihabiri-feature li p{
+text-align: left;
+}
+
+#daycarefeature li:last-of-type, #rihabiri-feature li:last-of-type{
+  margin-bottom: 0;
+}
+
+#daycarefeature span, #rihabiri-feature span{
+  font-size: 28px;
+}
+
+/* ご利用内容 */
+#contents ul, #fitnessmachine ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+#contents li, #fitnessmachine li{
+  width:48%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  border: 4px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#contents li p, #fitnessmachine li p{
+  text-align: center;
+  margin:auto;
+  padding:0.75rem;
+  font-size: 18px;
+}
+
+#contents img,#fitnessmachine img{
+  max-width: 100%;
+  height:10rem;
+  display: block;
+}
+
+/* デイケアご利用開始までの流れ */
+#flow .flow-step{
+display: flex;
+justify-content: space-between;
+}
+
+#flow img{
+  width: 46%;
+  height:20rem;
+  object-fit: contain;
+  background-color: #F1F3CE;
+  padding:1rem;
+}
+
+.flow-step-textbox{
+  width: 48%;
+  text-align: left;
+}
+
+#flow span{
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.flow-step-textbox h6{
+  margin:1rem 0;
+}
+
 .triangle {
   width: 0;
   height: 0;
   border-style: solid;
   border-right: 50px solid transparent;
   border-left: 50px solid transparent;
-  border-top: 60px solid #555555;
+  border-top: 60px solid #224466;
   border-bottom: 0;
+  margin:4rem auto;
+}
+
+
+/* 個別ページ */
+/* リハビリ */
+#fitnessmachine p{
+  text-align: left;
+}
+
+#fitnessmachine p:last-of-type{
+  margin-bottom: 2rem;
 }
