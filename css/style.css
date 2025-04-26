@@ -4,7 +4,7 @@ body {
   margin: 0;
   background-color: #fff;
   color: #224466;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .container {
@@ -48,6 +48,8 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  font-size: 16px;
+  z-index: 1000;
 }
 
 header .container, .container-header {
@@ -126,8 +128,10 @@ nav a {
   color: #fff;
   background-color: #224466;
   border: 2px solid #224466;
-  margin-top: 8rem;
-  padding: 0.25rem 0.75rem;
+  margin: 8rem 0 0.5rem 0;
+  padding: 1rem;
+  font-size: 22px;
+  font-weight: bolder;
 }
 
 #news dl {
@@ -138,16 +142,22 @@ nav a {
 
 #news dt {
   width: 30%;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
   border-bottom: 1px solid #224466;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
 }
 
 #news dd {
   width: 50%;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
   border-bottom: 1px solid #224466;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
 }
 
 
@@ -185,6 +195,7 @@ nav a {
 #treatment .treatment-subcontainer {
   display: flex;
   justify-content: space-between;
+  margin:2rem auto;
 }
 
 #treatment .treatment-subcontainer:first-of-type {
@@ -225,7 +236,7 @@ nav a {
 }
 
 #concept p {
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 
@@ -282,17 +293,20 @@ nav a {
 
 .information-item {
   background-color: #1E656D;
-  border-radius: 15px;
+  border-radius: 360px;
   margin: 0 1rem 1rem 0;
-  padding: 0.2rem 0.5rem;
+  padding: 0.2rem 1.75rem;
 }
 
 #information ul {
   text-align: left;
 }
 
-#information li {
-  margin: 0.75rem;
+#information li a{
+  margin: 0.5rem auto;
+  text-decoration: none;
+  color:#fff;
+  display: block;
 }
 
 #information table {
@@ -355,7 +369,7 @@ footer {
 }
 
 .hero-sub-container p{
-  font-size: 30px;
+  font-size: 22px;
 }
 
 
@@ -478,6 +492,7 @@ margin-top: 2rem;
 .card-explain{
 display: flex;
 justify-content: space-between;
+margin-bottom: 1.5rem;
 }
 
 .shinryo-img{
@@ -487,24 +502,61 @@ justify-content: space-between;
 .card-explain-text {
   width:48%;
   text-align: left;
-  }
+}
 
-  .card-explain-text p{
-    margin-bottom:1rem;
-  }
+.card-explain-text p{
+  margin-bottom:1rem;
+}
 
-#subjectguide .card-subjectdetail {
-  display: flex;
-  flex-wrap: wrap;
+.toggle {
+	display: none;
+}
+.Label {
+	padding: 0.5rem;
+	display: block;
+	background:#e3e3e3;
   text-align: left;
-  margin: 0 auto;
-  padding: 2rem;
+  padding:0.5rem 2rem;
+}
+.Label::before{
+	content:"+";
+	position: absolute;
+	right: 2rem;
+  transform: scale(1.5); 
+}
+.Label,
+.content {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform: translateZ(0);
+	transition: all 0.3s;
+}
+.content {
+	height: 0;
+	margin-bottom:0.25rem;
+	padding:0 1rem;
+	overflow: hidden;
 }
 
-#subjectguide .card-subjectdetail dt, #subjectguide .card-subjectdetail dd {
-  border-bottom: #ccc 1.5px solid;
-  padding-top: 1rem;
+.content p {
+text-align: left;
 }
+
+.toggle:checked + .Label + .content {	/*開閉時*/
+	height: auto;
+	padding:20px ;
+	transition: all .3s;
+}
+.toggle:checked + .Label::before {
+  content:"ー";
+	position: absolute;
+	right: 1.75rem;
+  transform: scale(0.8); 
+}
+
+
+
+
 
 #subjectguide .card-subjectdetail dt {
   width: 95%;
@@ -538,6 +590,10 @@ justify-content: space-between;
 .facilityguide-subcontainer_textbox h5{
   margin-bottom:0.75rem;
   font-size: 26px;
+}
+
+.facilityguide-subcontainer_textbox_text{
+  font-size: 16px;
 }
 
 /* 施設のご案内 */
