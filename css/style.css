@@ -36,7 +36,7 @@ h2 {
   display: inline-block;
   border-bottom: 2px solid #F62A00;
   margin: 2rem auto;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 
@@ -129,8 +129,8 @@ nav a {
   background-color: #224466;
   border: 2px solid #224466;
   margin: 8rem 0 0.5rem 0;
-  padding: 1rem;
-  font-size: 22px;
+  padding: 1.25rem 1.75rem;
+  font-size: 26px;
   font-weight: bolder;
 }
 
@@ -356,10 +356,16 @@ footer {
 .hero-sub-container {
   width: 50%;
   background-color: rgba(153, 170, 187, 1);
+  display: flex;
+  align-items: center;
+}
+
+.hero-sub-container-textbox{
+  width:100%;
+  display: block;
 }
 
 .hero-sub-heading {
-  padding: 5rem 0 2rem 0;
   font-size: 38px;
 }
 
